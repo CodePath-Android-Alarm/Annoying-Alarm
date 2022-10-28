@@ -34,8 +34,9 @@ An alarm application that forces the user to finish a game in order to turn the 
 - Clock screen
   - Make sure the UI is nice? 
 - List of alarm times set by the user
-  - [list associated required story here]
-  - ...
+  - User has the ability to create/update/delete alarm times
+- Game screen
+  - Alarm is shut off only when game is completed successfully
 
 ### 3. Navigation
 

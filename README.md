@@ -8,11 +8,11 @@ An alarm application that forces the user to finish a game in order to turn the 
 
 ### App Evaluation
 - **Category:** Productivity / Lifestyle
-- **Mobile:** Application uses audio and 
-- **Story:**
-- **Market:**
-- **Habit:**
-- **Scope:**
+- **Mobile:** 'Alarm application' would mainly be used on mobile/ smart watches. The application uses audio, push notifications, and real-time.
+- **Story:** The application is used to help break the bad habit of snoozing alarms and missing cruicial meetings.
+- **Market:** Anyone that needs an alarm.
+- **Habit:** Since alarms are used everyday, this app has the potential to be used every day.
+- **Scope:** 'Alarm app' is not too complex. At its core, it would need 3 sections, 1 for creating alarm times, another for the clock, and finally one for the games that the users are required to play.
 
 ## Product Spec
 

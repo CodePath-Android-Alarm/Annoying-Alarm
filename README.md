@@ -20,20 +20,20 @@ An alarm application that forces the user to finish a game in order to turn the 
 
 **Required Features**
 
-* [fill in your required user features here]
-* ...
+* A screen displaying a clock
+* User can create/dele/update alarm times
+* User can only turn the alarm off after completing the game
+* NO SNOOZE BUTTON
 
 **Stretch Features**
 
-* [fill in your optional user features here]
-* ...
+* Multiple games user can select from
 
 ### 2. Screen Archetypes
 
-- [list first screen here]
-  - [list associated required story here]
-  - ...
-- [list second screen here]
+- Clock screen
+  - Make sure the UI is nice? 
+- List of alarm times set by the user
   - [list associated required story here]
   - ...
 

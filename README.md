@@ -42,13 +42,13 @@ An alarm application that forces the user to finish a game in order to turn the 
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* Clock
+* Game
+* Alarm times
 
 **Flow Navigation** (Screen to Screen)
 
-- [list first screen here]
+- None so far...
   - [list screen navigation here]
   - ...
 - [list second screen here]

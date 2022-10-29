@@ -58,4 +58,4 @@ An alarm application that forces the user to finish a game in order to turn the 
 ## Wireframes
 
 [Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img src="(https://imgur.com/a/8DCYt0z)" width=600>

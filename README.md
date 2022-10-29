@@ -48,14 +48,12 @@ An alarm application that forces the user to finish a game in order to turn the 
 
 **Flow Navigation** (Screen to Screen)
 
-- None so far...
-  - [list screen navigation here]
-  - ...
-- [list second screen here]
-  - [list screen navigation here]
-  - ...
+- Alarm
+  - Create New Alarm
+  - Alarm List
+- Stopwatch
+- TImer
+- Game
 
 ## Wireframes
-
-[Add picture of your hand sketched wireframes in this section]
-<img src="(https://imgur.com/a/8DCYt0z)" width=600>
+<img src="https://i.imgur.com/NfT2h78.png" width=600>

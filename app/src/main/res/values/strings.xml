@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Annoying Alarm</string>
+    <string name="matching_game_icon_text">Matching Game</string>
+    <string name="alarms_icon_text">Alarms</string>
 </resources>

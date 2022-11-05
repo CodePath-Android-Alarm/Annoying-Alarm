@@ -69,3 +69,6 @@ An alarm application that forces the user to finish a game in order to turn the 
 
 ## Issue 2 - Card Matching Game
 <img src = "https://i.imgur.com/g55eAkN.gif">
+
+## Issue 4- Alarm List
+<img src="https://cdn.discordapp.com/attachments/1033437636616003649/1038247172975640616/Alarm_4.gif">

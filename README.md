@@ -25,6 +25,12 @@ An alarm application that forces the user to finish a game in order to turn the 
 * User can only turn the alarm off after completing the game
 * NO SNOOZE BUTTON
 
+- [x] Stopwatch
+- [x] Card Matching Minigame
+- [x] Alarms List
+- [ ] Edit Alarms
+- [ ] Clock
+- [ ] Alarm Sounds
 **Stretch Features**
 
 * Multiple games user can select from

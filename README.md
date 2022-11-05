@@ -57,3 +57,6 @@ An alarm application that forces the user to finish a game in order to turn the 
 
 ## Wireframes
 <img src="https://i.imgur.com/NfT2h78.png" width=600>
+
+## Issue 1 - Stop watch 
+<img src="http://g.recordit.co/SVZs34PQ6O.gif" width=600>

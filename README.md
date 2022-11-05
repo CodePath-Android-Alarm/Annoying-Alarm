@@ -60,3 +60,6 @@ An alarm application that forces the user to finish a game in order to turn the 
 
 ## Issue 1 - Stop watch 
 <img src="http://g.recordit.co/SVZs34PQ6O.gif" width=600>
+
+## Issue 2 - Card Matching Game
+<img src = "https://i.imgur.com/g55eAkN.gif">

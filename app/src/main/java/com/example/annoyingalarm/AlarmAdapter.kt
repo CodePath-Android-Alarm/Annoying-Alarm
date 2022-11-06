@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 lateinit var application: Application
 
-class AlarmAdapter(private val alarmlog : ArrayList<AlarmItem>, private val activity: MainActivity)
+class AlarmAdapter(private val alarmlog : ArrayList<AlarmItem>, private val activity: AlarmFragment)
     : RecyclerView.Adapter<AlarmAdapter.ViewHolder>() {
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
     {

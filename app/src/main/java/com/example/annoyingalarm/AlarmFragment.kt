@@ -11,17 +11,17 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.launch
 
-class MainActivity : AppCompatActivity() {
+class AlarmFragment : AppCompatActivity() {
     lateinit var alarmlog : ArrayList<AlarmItem>
     lateinit var alarmadapter : AlarmAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.alarm_fragment)
 
         val mainpageRv = findViewById<RecyclerView>(R.id.alarmtime)
         alarmlog = ArrayList()
-        alarmadapter = AlarmAdapter(alarmlog, this@MainActivity)
+        alarmadapter = AlarmAdapter(alarmlog, this@AlarmFragment)
         mainpageRv.adapter = alarmadapter
         lifecycleScope.launch {
             (application as AlarmApplication).db.alarmDao().getAll().collect { databaseList ->

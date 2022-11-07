@@ -25,6 +25,12 @@ An alarm application that forces the user to finish a game in order to turn the 
 * User can only turn the alarm off after completing the game
 * NO SNOOZE BUTTON
 
+- [x] Stopwatch
+- [x] Card Matching Minigame
+- [x] Alarms List
+- [ ] Edit Alarms
+- [ ] Clock
+- [ ] Alarm Sounds
 **Stretch Features**
 
 * Multiple games user can select from
@@ -57,3 +63,12 @@ An alarm application that forces the user to finish a game in order to turn the 
 
 ## Wireframes
 <img src="https://i.imgur.com/NfT2h78.png" width=600>
+
+## Issue 1 - Stop watch 
+<img src="http://g.recordit.co/SVZs34PQ6O.gif" width=600>
+
+## Issue 2 - Card Matching Game
+<img src = "https://i.imgur.com/g55eAkN.gif">
+
+## Issue 4- Alarm List
+<img src="https://cdn.discordapp.com/attachments/1033437636616003649/1038247172975640616/Alarm_4.gif">

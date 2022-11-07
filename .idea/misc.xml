@@ -3,6 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/nsj210001/AndroidStudioProjects/Annoying-Alarm/app/src/main/res/drawable/ic_baseline_alarm_24.xml" value="0.1" />
+        <entry key="..\:/Users/nsj210001/AndroidStudioProjects/Annoying-Alarm/app/src/main/res/drawable/ic_baseline_hourglass_bottom_24.xml" value="0.1" />
+        <entry key="..\:/Users/nsj210001/AndroidStudioProjects/Annoying-Alarm/app/src/main/res/layout/activity_main.xml" value="0.14749893116716545" />
+        <entry key="..\:/Users/nsj210001/AndroidStudioProjects/Annoying-Alarm/app/src/main/res/layout/alarm_display.xml" value="0.17864583333333334" />
+        <entry key="..\:/Users/nsj210001/AndroidStudioProjects/Annoying-Alarm/app/src/main/res/layout/alarm_fragment.xml" value="0.1796875" />
+        <entry key="..\:/Users/nsj210001/AndroidStudioProjects/Annoying-Alarm/app/src/main/res/layout/alarm_page.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/nsj210001/AndroidStudioProjects/Annoying-Alarm/app/src/main/res/layout/alarm_schedule.xml" value="0.1796875" />
+        <entry key="..\:/Users/nsj210001/AndroidStudioProjects/Annoying-Alarm/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.1796875" />
         <entry key="..\:/Users/Mamadou Diallo/Desktop/City Tech/Fall 2022/CodePath Android Development/Annoying-Alarm/app/src/main/res/layout/activity_main.xml" value="0.21784420289855072" />
         <entry key="..\:/Users/Mamadou Diallo/Desktop/City Tech/Fall 2022/CodePath Android Development/Annoying-Alarm/app/src/main/res/layout/fragment_alarms.xml" value="0.21784420289855072" />
         <entry key="..\:/Users/Mamadou Diallo/Desktop/City Tech/Fall 2022/CodePath Android Development/Annoying-Alarm/app/src/main/res/layout/fragment_matching_game.xml" value="0.2" />
@@ -15,5 +23,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1" />
+      </ProjectState>
+    </option>
   </component>
 </project>

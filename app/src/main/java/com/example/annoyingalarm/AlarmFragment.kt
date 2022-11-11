@@ -1,13 +1,13 @@
 package com.example.annoyingalarm
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import androidx.recyclerview.widget.RecyclerView
 import android.content.Intent
+import android.os.Bundle
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.launch
 
@@ -17,12 +17,12 @@ class AlarmFragment : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.alarm_fragment)
+        setContentView(R.layout.fragment_alarm)
 
-        val mainpageRv = findViewById<RecyclerView>(R.id.alarmtime)
+        val mainPageRv = findViewById<RecyclerView>(R.id.alarmTime)
         alarmlog = ArrayList()
-        alarmadapter = AlarmAdapter(alarmlog, this@AlarmFragment)
-        mainpageRv.adapter = alarmadapter
+        // alarmadapter = AlarmAdapter(alarmlog, this@AlarmFragment)
+        mainPageRv.adapter = alarmadapter
         lifecycleScope.launch {
             (application as AlarmApplication).db.alarmDao().getAll().collect { databaseList ->
                 databaseList.map { entity ->
@@ -38,9 +38,9 @@ class AlarmFragment : AppCompatActivity() {
             }
         }
 
-        mainpageRv.layoutManager = LinearLayoutManager(this).also {
+        mainPageRv.layoutManager = LinearLayoutManager(this).also {
             val dividerItemDecoration = DividerItemDecoration(this, it.orientation)
-            mainpageRv.addItemDecoration(dividerItemDecoration)
+            mainPageRv.addItemDecoration(dividerItemDecoration)
         }
 
         findViewById<Button>(R.id.deleteAll).setOnClickListener {

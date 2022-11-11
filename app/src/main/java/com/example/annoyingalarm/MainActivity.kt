@@ -1,38 +1,82 @@
 package com.example.annoyingalarm
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
+import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
+    lateinit var alarmlog : ArrayList<AlarmItem>
+    lateinit var alarmadapter : AlarmAdapter
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val fragmentManager = supportFragmentManager
-        val matchingGameFragment: Fragment = MatchingGameFragment()
-        val alarmFragment: Fragment = AlarmFragment()
+        val mainPageRv = findViewById<RecyclerView>(R.id.alarmTime)
+        alarmlog = ArrayList()
+        alarmadapter = AlarmAdapter(alarmlog, this@MainActivity)
+        mainPageRv.adapter = alarmadapter
+        lifecycleScope.launch {
+            (application as AlarmApplication).db.alarmDao().getAll().collect { databaseList ->
+                databaseList.map { entity ->
+                    AlarmItem(
+                        entity.set_time,
+                        entity.set_day
+                    )
+                }.also { mappedList ->
+                    alarmlog.clear()
+                    alarmlog.addAll(mappedList)
+                    alarmadapter.notifyDataSetChanged()
+                }
+            }
+        }
+
+        mainPageRv.layoutManager = LinearLayoutManager(this).also {
+            val dividerItemDecoration = DividerItemDecoration(this, it.orientation)
+            mainPageRv.addItemDecoration(dividerItemDecoration)
+        }
+
+        findViewById<Button>(R.id.deleteAll).setOnClickListener {
+            lifecycleScope.launch(Dispatchers.IO) {
+                (application as AlarmApplication).db.alarmDao().deleteAll()
+            }
+        }
+
+        findViewById<Button>(R.id.record).setOnClickListener {
+            val intent = Intent(this, AlarmActivity::class.java)
+            startActivity(intent)
+        }
+
 
         val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottom_navigation)
 
         bottomNavigationView.setOnItemSelectedListener { item->
-            lateinit var fragment: Fragment
             when(item.itemId)
             {
-                R.id.matchingGame -> fragment = matchingGameFragment
-                R.id.alarm -> fragment = alarmFragment
+                R.id.matchingGame -> startActivity(Intent(this@MainActivity,MatchingGameFragment::class.java))
+                R.id.alarm -> true
             }
-            replaceFragment(fragment)
             true
         }
         bottomNavigationView.selectedItemId = R.id.alarm
     }
 
-    private fun replaceFragment(fragment: Fragment) {
-        val fragmentManager = supportFragmentManager
-        val fragmentTransaction = fragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.alarm_frame_layout, fragment)
-        fragmentTransaction.commit()
+    fun delete(alarmItem: AlarmItem) {
+        lifecycleScope.launch(Dispatchers.IO) {
+            (application as AlarmApplication).db.alarmDao().delete(
+                AlarmEntity(
+                    set_time = alarmItem.time,
+                    set_day = alarmItem.days
+                )
+            )
+        }
     }
 }

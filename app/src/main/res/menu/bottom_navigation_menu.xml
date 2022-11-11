@@ -1,32 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item
-        android:title="Set Alarm"
-        android:enabled="true"
-        android:id="@+id/nav_log"
-        app:showAsAction="ifRoom"
-        />
-    <item
-        android:title="Timer"
-        android:enabled="true"
-        android:icon="@drawable/ic_baseline_hourglass_bottom_24"
-        android:id="@+id/nav_dashboard"
-        app:showAsAction="ifRoom"
+
     <item
         android:title="@string/alarms_icon_text"
         android:id="@+id/alarm"
         android:enabled="true"
         app:showAsAction="always"
-        android:icon="@drawable/ic_baseline_alarm"
+        android:icon="@drawable/ic_alarm"
         />
+
+    <item
+        android:title="@string/timer_icon_text"
+        android:id="@+id/timer"
+        android:enabled="true"
+        android:icon="@drawable/ic_hourglass_bottom"
+        app:showAsAction="ifRoom"/>
+
     <item
         android:title="@string/matching_game_icon_text"
         android:id="@+id/matchingGame"
         android:enabled="true"
         app:showAsAction="ifRoom"
         android:icon="@drawable/ic_baseline_game"
-        android:icon="@drawable/ic_baseline_alarm_24"
         />
 </menu>

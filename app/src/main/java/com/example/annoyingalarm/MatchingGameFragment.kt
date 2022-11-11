@@ -1,17 +1,16 @@
 package com.example.annoyingalarm
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.ImageButton
 import android.widget.Toast
-import androidx.fragment.app.Fragment
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import kotlinx.coroutines.delay
 
-class MatchingGameFragment : Fragment() {
+class MatchingGameFragment : AppCompatActivity() {
 
     private lateinit var buttons: List<ImageButton>
     private lateinit var cards: List<Card>
@@ -19,26 +18,32 @@ class MatchingGameFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-    }
+        setContentView(R.layout.fragment_matching_game)
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        val view = inflater.inflate(R.layout.fragment_matching_game,container,false)
+        val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottom_navigation)
 
-        val imageButton1 = view.findViewById<ImageButton>(R.id.imageButton1)
-        val imageButton2 = view.findViewById<ImageButton>(R.id.imageButton2)
-        val imageButton3 = view.findViewById<ImageButton>(R.id.imageButton3)
-        val imageButton4 = view.findViewById<ImageButton>(R.id.imageButton4)
-        val imageButton5 = view.findViewById<ImageButton>(R.id.imageButton5)
-        val imageButton6 = view.findViewById<ImageButton>(R.id.imageButton6)
-        val imageButton7 = view.findViewById<ImageButton>(R.id.imageButton7)
-        val imageButton8 = view.findViewById<ImageButton>(R.id.imageButton8)
-        val imageButton9 = view.findViewById<ImageButton>(R.id.imageButton9)
-        val imageButton10 = view.findViewById<ImageButton>(R.id.imageButton10)
-        val imageButton11 = view.findViewById<ImageButton>(R.id.imageButton11)
-        val imageButton12 = view.findViewById<ImageButton>(R.id.imageButton12)
+        bottomNavigationView.setOnItemSelectedListener { item->
+            when(item.itemId)
+            {
+                R.id.matchingGame -> true
+                R.id.alarm -> startActivity(Intent(this@MatchingGameFragment,MainActivity::class.java))
+            }
+            true
+        }
+        bottomNavigationView.selectedItemId = R.id.matchingGame
+
+        val imageButton1 = findViewById<ImageButton>(R.id.imageButton1)
+        val imageButton2 = findViewById<ImageButton>(R.id.imageButton2)
+        val imageButton3 = findViewById<ImageButton>(R.id.imageButton3)
+        val imageButton4 = findViewById<ImageButton>(R.id.imageButton4)
+        val imageButton5 = findViewById<ImageButton>(R.id.imageButton5)
+        val imageButton6 = findViewById<ImageButton>(R.id.imageButton6)
+        val imageButton7 = findViewById<ImageButton>(R.id.imageButton7)
+        val imageButton8 = findViewById<ImageButton>(R.id.imageButton8)
+        val imageButton9 = findViewById<ImageButton>(R.id.imageButton9)
+        val imageButton10 = findViewById<ImageButton>(R.id.imageButton10)
+        val imageButton11 = findViewById<ImageButton>(R.id.imageButton11)
+        val imageButton12 = findViewById<ImageButton>(R.id.imageButton12)
 
         // Add buttons to list
         buttons = listOf(imageButton1,imageButton2,imageButton3,imageButton4,imageButton5,imageButton6,
@@ -69,7 +74,6 @@ class MatchingGameFragment : Fragment() {
                 }.start()
             }
         }
-        return view
     }
 
     private fun updateViews() {
@@ -88,7 +92,7 @@ class MatchingGameFragment : Fragment() {
         if (card.isFaceUp)
         {
             // TODO: make card flip and sparkle
-            Toast.makeText(view?.context,"✨Already Matched✨",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"✨Already Matched✨",Toast.LENGTH_SHORT).show()
             return
         }
 
@@ -137,12 +141,7 @@ class MatchingGameFragment : Fragment() {
                             duration = 500
                             rotationYBy(360f)
                         }.withEndAction{
-                            val bottomNavigationView: BottomNavigationView = requireView().findViewById(R.id.bottom_navigation)
-                            bottomNavigationView.selectedItemId = R.id.alarm
-                            val transaction = parentFragmentManager.beginTransaction()
-                            var fragment = AlarmFragment()
-                            transaction.replace(R.id.alarm_frame_layout,fragment)
-                            transaction.commit()
+                            this.finish()
                         }
                     }.start()
                 }

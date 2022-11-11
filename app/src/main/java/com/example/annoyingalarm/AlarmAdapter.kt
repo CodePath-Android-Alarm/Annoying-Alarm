@@ -9,24 +9,24 @@ import androidx.recyclerview.widget.RecyclerView
 
 lateinit var application: Application
 
-class AlarmAdapter(private val alarmlog : ArrayList<AlarmItem>, private val activity: AlarmFragment)
+class AlarmAdapter(private val alarmLog : ArrayList<AlarmItem>, private val activity: MainActivity)
     : RecyclerView.Adapter<AlarmAdapter.ViewHolder>() {
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
     {
-        private val alarm = itemView.findViewById<TextView>(R.id.alarmtime)
-        private val alarmrepeat = itemView.findViewById<TextView>(R.id.alarmday)
+        private val alarm = itemView.findViewById<TextView>(R.id.alarm_display_time)
+        private val alarmRepeat = itemView.findViewById<TextView>(R.id.alarm_display_day)
 
         fun bind(alarmItem: AlarmItem) {
             alarm.text = alarmItem.time
-            alarmrepeat.text = alarmItem.days
+            alarmRepeat.text = alarmItem.days
         }
     }
 
     fun removeAt(position: Int) {
-        val alarmItem = alarmlog[position]
-        alarmlog.removeAt(position)
+        val alarmItem = alarmLog[position]
+        alarmLog.removeAt(position)
         notifyItemRemoved(position)
-        notifyItemRangeChanged(position, alarmlog.size)
+        notifyItemRangeChanged(position, alarmLog.size)
         activity.delete(alarmItem)
     }
 
@@ -36,9 +36,9 @@ class AlarmAdapter(private val alarmlog : ArrayList<AlarmItem>, private val acti
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val log = alarmlog[position]
+        val log = alarmLog[position]
         holder.bind(log)
     }
 
-    override fun getItemCount() = alarmlog.size
+    override fun getItemCount() = alarmLog.size
 }

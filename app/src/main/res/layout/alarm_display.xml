@@ -23,7 +23,11 @@
         android:layout_marginStart="212dp"
         android:layout_marginTop="20dp"
         android:text="Alarm Days"
-        android:textSize="20sp"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMaxTextSize="25sp"
+        app:flow_horizontalAlign="center"
+        android:textAlignment="center"
+        app:flow_verticalAlign="center"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

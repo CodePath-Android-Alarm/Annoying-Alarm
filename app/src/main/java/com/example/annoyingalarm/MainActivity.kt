@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         val mainPageRv = findViewById<RecyclerView>(R.id.alarmTime)
         alarmlog = ArrayList()
-        alarmadapter = AlarmAdapter(alarmlog, this@MainActivity)
+        alarmadapter = AlarmAdapter(alarmlog)
         mainPageRv.adapter = alarmadapter
         lifecycleScope.launch {
             (application as AlarmApplication).db.alarmDao().getAll().collect { databaseList ->
@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         findViewById<Button>(R.id.record).setOnClickListener {
-            val intent = Intent(this, AlarmActivity::class.java)
+            val intent = Intent(this, AddAlarmActivity::class.java)
             startActivity(intent)
         }
 

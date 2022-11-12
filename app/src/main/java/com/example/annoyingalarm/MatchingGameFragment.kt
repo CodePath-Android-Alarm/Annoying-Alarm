@@ -80,7 +80,7 @@ class MatchingGameFragment : AppCompatActivity() {
             {
                 button.alpha = 0.2f
             }
-            button.setImageResource(if(card.isFaceUp) card.identifier else R.drawable.ic_code)
+            button.setImageResource(if(card.isFaceUp) card.identifier else R.mipmap.mad_bomb)
         }
     }
 
@@ -134,6 +134,7 @@ class MatchingGameFragment : AppCompatActivity() {
                         duration = 500
                         rotationXBy(360f)
                     }.withEndAction{
+                        buttons.forEach {it.setImageResource(R.mipmap.mad_bomb)}
                         button.animate().apply {
                             duration = 500
                             rotationYBy(360f)

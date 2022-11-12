@@ -24,7 +24,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_code" />
+        app:srcCompat="@mipmap/mad_bomb" />
 
     <ImageButton
         android:id="@+id/imageButton2"
@@ -35,7 +35,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageButton1"
         app:layout_constraintTop_toTopOf="@+id/imageButton1"
-        app:srcCompat="@drawable/ic_code" />
+        app:srcCompat="@mipmap/mad_bomb" />
 
     <ImageButton
         android:id="@+id/imageButton3"
@@ -46,7 +46,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageButton2"
         app:layout_constraintTop_toTopOf="@+id/imageButton2"
-        app:srcCompat="@drawable/ic_code" />
+        app:srcCompat="@mipmap/mad_bomb" />
 
     <ImageButton
         android:id="@+id/imageButton4"
@@ -56,7 +56,7 @@
         app:layout_constraintBottom_toTopOf="@+id/imageButton7"
         app:layout_constraintStart_toStartOf="@+id/imageButton1"
         app:layout_constraintTop_toBottomOf="@+id/imageButton1"
-        app:srcCompat="@drawable/ic_code" />
+        app:srcCompat="@mipmap/mad_bomb" />
 
     <ImageButton
         android:id="@+id/imageButton5"
@@ -68,7 +68,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageButton4"
         app:layout_constraintTop_toBottomOf="@+id/imageButton2"
-        app:srcCompat="@drawable/ic_code" />
+        app:srcCompat="@mipmap/mad_bomb" />
 
     <ImageButton
         android:id="@+id/imageButton6"
@@ -78,7 +78,7 @@
         app:layout_constraintBottom_toTopOf="@+id/imageButton9"
         app:layout_constraintEnd_toEndOf="@+id/imageButton3"
         app:layout_constraintTop_toBottomOf="@+id/imageButton3"
-        app:srcCompat="@drawable/ic_code" />
+        app:srcCompat="@mipmap/mad_bomb" />
 
     <ImageButton
         android:id="@+id/imageButton7"
@@ -88,7 +88,7 @@
         app:layout_constraintBottom_toTopOf="@+id/imageButton10"
         app:layout_constraintStart_toStartOf="@+id/imageButton4"
         app:layout_constraintTop_toBottomOf="@+id/imageButton4"
-        app:srcCompat="@drawable/ic_code" />
+        app:srcCompat="@mipmap/mad_bomb" />
 
     <ImageButton
         android:id="@+id/imageButton8"
@@ -100,7 +100,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageButton7"
         app:layout_constraintTop_toBottomOf="@+id/imageButton5"
-        app:srcCompat="@drawable/ic_code" />
+        app:srcCompat="@mipmap/mad_bomb" />
 
     <ImageButton
         android:id="@+id/imageButton9"
@@ -110,7 +110,7 @@
         app:layout_constraintBottom_toTopOf="@+id/imageButton12"
         app:layout_constraintEnd_toEndOf="@+id/imageButton6"
         app:layout_constraintTop_toBottomOf="@+id/imageButton6"
-        app:srcCompat="@drawable/ic_code" />
+        app:srcCompat="@mipmap/mad_bomb" />
 
     <ImageButton
         android:id="@+id/imageButton10"
@@ -120,7 +120,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/imageButton7"
         app:layout_constraintTop_toBottomOf="@+id/imageButton7"
-        app:srcCompat="@drawable/ic_code" />
+        app:srcCompat="@mipmap/mad_bomb" />
 
     <ImageButton
         android:id="@+id/imageButton11"
@@ -131,7 +131,7 @@
         app:layout_constraintEnd_toStartOf="@+id/imageButton12"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageButton10"
-        app:srcCompat="@drawable/ic_code" />
+        app:srcCompat="@mipmap/mad_bomb" />
 
     <ImageButton
         android:id="@+id/imageButton12"
@@ -140,5 +140,5 @@
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="@+id/imageButton11"
         app:layout_constraintEnd_toEndOf="@+id/imageButton9"
-        app:srcCompat="@drawable/ic_code" />
+        app:srcCompat="@mipmap/mad_bomb" />
 </androidx.constraintlayout.widget.ConstraintLayout>

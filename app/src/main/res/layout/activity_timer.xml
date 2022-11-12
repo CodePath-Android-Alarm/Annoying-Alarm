@@ -17,7 +17,6 @@
         android:padding="10dp"
         android:text="00:00:00:00"
         android:textAlignment="center"
-        android:textColor="@color/black"
         android:textSize="60sp"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
         app:layout_constraintTop_toTopOf="parent"

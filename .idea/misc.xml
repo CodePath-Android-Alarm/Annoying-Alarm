@@ -7,6 +7,7 @@
         <entry key="..\:/Users/Mamadou Diallo/Desktop/City Tech/Fall 2022/CodePath Android Development/Annoying-Alarm/app/src/main/res/drawable/ic_baseline_alarm.xml" value="0.2395" />
         <entry key="..\:/Users/Mamadou Diallo/Desktop/City Tech/Fall 2022/CodePath Android Development/Annoying-Alarm/app/src/main/res/drawable/ic_baseline_alarm_24.xml" value="0.2395" />
         <entry key="..\:/Users/Mamadou Diallo/Desktop/City Tech/Fall 2022/CodePath Android Development/Annoying-Alarm/app/src/main/res/drawable/ic_bike.xml" value="0.2395" />
+        <entry key="..\:/Users/Mamadou Diallo/Desktop/City Tech/Fall 2022/CodePath Android Development/Annoying-Alarm/app/src/main/res/drawable/ic_bomb.xml" value="0.2395" />
         <entry key="..\:/Users/Mamadou Diallo/Desktop/City Tech/Fall 2022/CodePath Android Development/Annoying-Alarm/app/src/main/res/drawable/ic_code.xml" value="0.2395" />
         <entry key="..\:/Users/Mamadou Diallo/Desktop/City Tech/Fall 2022/CodePath Android Development/Annoying-Alarm/app/src/main/res/drawable/ic_fire.xml" value="0.2395" />
         <entry key="..\:/Users/Mamadou Diallo/Desktop/City Tech/Fall 2022/CodePath Android Development/Annoying-Alarm/app/src/main/res/drawable/ic_hourglass_bottom.xml" value="0.2395" />
@@ -23,6 +24,9 @@
         <entry key="..\:/Users/Mamadou Diallo/Desktop/City Tech/Fall 2022/CodePath Android Development/Annoying-Alarm/app/src/main/res/layout/fragment_alarms.xml" value="0.21784420289855072" />
         <entry key="..\:/Users/Mamadou Diallo/Desktop/City Tech/Fall 2022/CodePath Android Development/Annoying-Alarm/app/src/main/res/layout/fragment_matching_game.xml" value="0.2" />
         <entry key="..\:/Users/Mamadou Diallo/Desktop/City Tech/Fall 2022/CodePath Android Development/Annoying-Alarm/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.2" />
+        <entry key="..\:/Users/Mamadou Diallo/Desktop/City Tech/Fall 2022/CodePath Android Development/Annoying-Alarm/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2395" />
+        <entry key="..\:/Users/Mamadou Diallo/Desktop/City Tech/Fall 2022/CodePath Android Development/Annoying-Alarm/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2395" />
+        <entry key="..\:/Users/Mamadou Diallo/Desktop/City Tech/Fall 2022/CodePath Android Development/Annoying-Alarm/app/src/main/res/mipmap-anydpi-v26/mad_bomb.xml" value="0.2395" />
       </map>
     </option>
   </component>

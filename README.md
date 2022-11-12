@@ -28,9 +28,8 @@ An alarm application that forces the user to finish a game in order to turn the 
 - [x] Stopwatch
 - [x] Card Matching Minigame
 - [x] Alarms List
-- [ ] Edit Alarms
-- [ ] Clock
-- [ ] Alarm Sounds
+- [x] Edit Alarms
+- [x] Alarm Sounds
 **Stretch Features**
 
 * Multiple games user can select from
@@ -72,3 +71,6 @@ An alarm application that forces the user to finish a game in order to turn the 
 
 ## Issue 4- Alarm List
 <img src="https://cdn.discordapp.com/attachments/1033437636616003649/1038247172975640616/Alarm_4.gif">
+
+## Demo Day
+<img src="https://submissions.us-east-1.linodeobjects.com/and102/lRDyDaV-.gif">

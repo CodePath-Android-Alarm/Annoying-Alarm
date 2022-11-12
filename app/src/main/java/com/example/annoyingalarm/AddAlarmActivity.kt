@@ -1,23 +1,18 @@
 package com.example.annoyingalarm
 
-import android.app.TimePickerDialog.OnTimeSetListener
-import android.graphics.Color
-import android.graphics.Typeface
+import android.app.AlarmManager
+import android.app.PendingIntent
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
-import android.text.Spannable
-import android.text.SpannableString
-import android.text.style.ForegroundColorSpan
-import android.util.Log
 import android.widget.Button
 import android.widget.CheckBox
 import android.widget.TimePicker
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.text.bold
-import androidx.core.text.buildSpannedString
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import java.io.Console
 
 
 class AddAlarmActivity : AppCompatActivity() {
@@ -86,6 +81,13 @@ class AddAlarmActivity : AppCompatActivity() {
                 )
             }
 
+            var sec = 5*1000
+            var i = Intent(applicationContext,AlarmReceiver::class.java)
+
+            var pi = PendingIntent.getBroadcast(applicationContext,111,i,0)
+            var am : AlarmManager = getSystemService(Context.ALARM_SERVICE) as AlarmManager
+            am.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP,System.currentTimeMillis() + sec,pi)
+            Toast.makeText(applicationContext,"Alarm set",Toast.LENGTH_SHORT)
             finish()
         }
     }

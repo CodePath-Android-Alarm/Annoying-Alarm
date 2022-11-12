@@ -1,6 +1,7 @@
 package com.example.annoyingalarm
 
 import android.content.Intent
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -16,11 +17,15 @@ class MatchingGameFragment : AppCompatActivity() {
     private lateinit var buttons: List<ImageButton>
     private lateinit var cards: List<Card>
     private var indexOfSingleSelectedCard: Int? = null
+    lateinit var mp: MediaPlayer
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fragment_matching_game)
         window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
+
+        mp = MediaPlayer.create(applicationContext,R.raw.delta5)
+        mp.start()
 
         val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottom_navigation)
 
@@ -143,6 +148,7 @@ class MatchingGameFragment : AppCompatActivity() {
                             duration = 500
                             rotationYBy(360f)
                         }.withEndAction{
+                            mp.stop()
                             this.finish()
                         }
                     }.start()

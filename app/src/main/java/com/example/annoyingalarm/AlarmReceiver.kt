@@ -3,19 +3,14 @@ package com.example.annoyingalarm
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import android.os.Bundle
-import android.widget.Button
-import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.lifecycleScope
-import androidx.recyclerview.widget.DividerItemDecoration
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import kotlinx.coroutines.Dispatchers.IO
-import kotlinx.coroutines.launch
+import android.media.MediaPlayer
+import androidx.core.content.ContextCompat.startActivity
 
 class AlarmReceiver : BroadcastReceiver() {
-    override fun onReceive(p0: Context?, p1: Intent?) {
-        TODO("Not yet implemented")
+    override fun onReceive(context: Context?, p1: Intent?) {
+        val intent = Intent(context,MatchingGameFragment::class.java)
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+        context?.startActivity(intent)
     }
 
 }

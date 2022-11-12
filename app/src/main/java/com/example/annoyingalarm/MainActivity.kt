@@ -62,7 +62,7 @@ class MainActivity : AppCompatActivity() {
             when(item.itemId)
             {
                 R.id.matchingGame -> startActivity(Intent(this@MainActivity,MatchingGameFragment::class.java))
-                R.id.alarm -> true
+                R.id.timer -> startActivity(Intent(this@MainActivity,TimerActivity::class.java ))
             }
             true
         }

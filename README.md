@@ -73,4 +73,4 @@ An alarm application that forces the user to finish a game in order to turn the 
 <img src="https://cdn.discordapp.com/attachments/1033437636616003649/1038247172975640616/Alarm_4.gif">
 
 ## Demo Day
-<img src="https://submissions.us-east-1.linodeobjects.com/and102/lRDyDaV-.gif">
+<img src="https://cdn.discordapp.com/attachments/1033437636616003649/1040932814192918579/lRDyDaV-.gif">

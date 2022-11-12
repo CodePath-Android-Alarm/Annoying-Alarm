@@ -17,7 +17,6 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
             >
-
             <TimePicker
                 android:id="@+id/fragment_createalarm_timePicker"
                 android:layout_width="0dp"
@@ -33,31 +32,16 @@
             android:id="@+id/alarm_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Alarm Label"
-            android:minHeight="48dp"
             android:textAlignment="center"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            android:hint="Alarm Label"
             app:layout_constraintTop_toBottomOf="@+id/timePicker" />
-
-        <CheckBox
-            android:id="@+id/alarm_recurring"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:checked="false"
-            android:text="Repeat Alarm"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/alarm_title" />
 
         <LinearLayout
             android:id="@+id/alarm_recurring_options"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/alarm_recurring">
+            app:layout_constraintTop_toBottomOf="@+id/alarm_title">
 
             <CheckBox
                 android:id="@+id/checkMon"

@@ -7,7 +7,6 @@ import android.content.IntentFilter
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.annoyingalarm.databinding.ActivityTimerBinding
-import com.example.annoyingalarm.MainActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlin.math.roundToInt
 
@@ -33,7 +32,7 @@ class TimerActivity: AppCompatActivity() {
         bottomNavigationView.setOnItemSelectedListener { item->
             when(item.itemId)
             {
-                R.id.matchingGame -> startActivity(Intent(this@TimerActivity,MatchingGameFragment::class.java))
+//                R.id.matchingGame -> startActivity(Intent(this@TimerActivity,MatchingGameFragment::class.java))
                 R.id.alarm -> startActivity(Intent(this@TimerActivity,MainActivity::class.java))
             }
             true

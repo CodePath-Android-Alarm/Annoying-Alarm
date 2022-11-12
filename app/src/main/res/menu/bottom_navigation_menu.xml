@@ -16,12 +16,4 @@
         android:enabled="true"
         android:icon="@drawable/ic_hourglass_bottom"
         app:showAsAction="ifRoom"/>
-
-    <item
-        android:title="@string/matching_game_icon_text"
-        android:id="@+id/matchingGame"
-        android:enabled="true"
-        app:showAsAction="ifRoom"
-        android:icon="@drawable/ic_baseline_game"
-        />
 </menu>

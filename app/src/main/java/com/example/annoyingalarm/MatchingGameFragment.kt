@@ -1,6 +1,8 @@
 package com.example.annoyingalarm
 
+import android.content.Context
 import android.content.Intent
+import android.media.AudioManager
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -23,21 +25,9 @@ class MatchingGameFragment : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fragment_matching_game)
         window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
-
+        
         mp = MediaPlayer.create(applicationContext,R.raw.delta5)
         mp.start()
-
-        val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottom_navigation)
-
-        bottomNavigationView.setOnItemSelectedListener { item->
-            when(item.itemId)
-            {
-                R.id.timer -> startActivity(Intent(this@MatchingGameFragment, TimerActivity::class.java))
-                R.id.alarm -> startActivity(Intent(this@MatchingGameFragment,MainActivity::class.java))
-            }
-            true
-        }
-        bottomNavigationView.selectedItemId = R.id.matchingGame
 
         val imageButton1 = findViewById<ImageButton>(R.id.imageButton1)
         val imageButton2 = findViewById<ImageButton>(R.id.imageButton2)

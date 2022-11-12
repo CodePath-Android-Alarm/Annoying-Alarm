@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
         bottomNavigationView.setOnItemSelectedListener { item->
             when(item.itemId)
             {
-                R.id.matchingGame -> startActivity(Intent(this@MainActivity,MatchingGameFragment::class.java))
+//                R.id.matchingGame -> startActivity(Intent(this@MainActivity,MatchingGameFragment::class.java))
                 R.id.timer -> startActivity(Intent(this@MainActivity,TimerActivity::class.java ))
             }
             true

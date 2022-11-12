@@ -74,3 +74,4 @@ An alarm application that forces the user to finish a game in order to turn the 
 
 ## Demo Day
 <img src="https://cdn.discordapp.com/attachments/1033437636616003649/1040932814192918579/lRDyDaV-.gif">
+https://cdn.discordapp.com/attachments/1033437636616003649/1040932814192918579/lRDyDaV-.gif
